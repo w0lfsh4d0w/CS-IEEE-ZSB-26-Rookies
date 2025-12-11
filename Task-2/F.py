@@ -1,0 +1,8 @@
+arr2D = [list(map(int, input().split())) for _ in range(5)]
+
+for i in range(5):
+    for j in range(5):
+        if arr2D[i][j] == 1:
+            moves = abs(i - 2) + abs(j - 2)
+            print(moves)
+            exit()
